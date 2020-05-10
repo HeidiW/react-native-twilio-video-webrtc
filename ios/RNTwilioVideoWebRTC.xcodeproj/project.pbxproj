@@ -16,6 +16,7 @@
 		738F9D6D203760FF00058972 /* RCTTWLocalVideoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 738F9D67203760FF00058972 /* RCTTWLocalVideoViewManager.m */; };
 		738F9D6E203760FF00058972 /* RCTTWVideoModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 738F9D68203760FF00058972 /* RCTTWVideoModule.m */; };
 		73AC89CA20377EA700038475 /* TwilioVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AC89C920377EA700038475 /* TwilioVideo.framework */; };
+		BE91EB888535136701F21935 /* Pods_RNTwilioVideoWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9BA8D7CB30906A7FBDC3FF /* Pods_RNTwilioVideoWebRTC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1EF9B4F7C64144A5F4EF45A6 /* Pods-RNTwilioVideoWebRTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTwilioVideoWebRTC.release.xcconfig"; path = "Target Support Files/Pods-RNTwilioVideoWebRTC/Pods-RNTwilioVideoWebRTC.release.xcconfig"; sourceTree = "<group>"; };
 		738F9D552037604000058972 /* libRNTwilioVideoWebRTC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNTwilioVideoWebRTC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		738F9D63203760FF00058972 /* RCTTWVideoModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTWVideoModule.h; sourceTree = SOURCE_ROOT; };
 		738F9D64203760FF00058972 /* RCTTWSerializable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTTWSerializable.m; sourceTree = SOURCE_ROOT; };
@@ -45,6 +47,8 @@
 		738F9D69203760FF00058972 /* RCTTWLocalVideoViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTWLocalVideoViewManager.h; sourceTree = SOURCE_ROOT; };
 		738F9D6A203760FF00058972 /* RCTTWRemoteVideoViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTWRemoteVideoViewManager.h; sourceTree = SOURCE_ROOT; };
 		73AC89C920377EA700038475 /* TwilioVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwilioVideo.framework; sourceTree = "<group>"; };
+		DA9BA8D7CB30906A7FBDC3FF /* Pods_RNTwilioVideoWebRTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNTwilioVideoWebRTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8522988AF7DF170CDE73366 /* Pods-RNTwilioVideoWebRTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTwilioVideoWebRTC.debug.xcconfig"; path = "Target Support Files/Pods-RNTwilioVideoWebRTC/Pods-RNTwilioVideoWebRTC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73AC89CA20377EA700038475 /* TwilioVideo.framework in Frameworks */,
+				BE91EB888535136701F21935 /* Pods_RNTwilioVideoWebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 				738F9D572037604000058972 /* RNTwilioVideoWebRTC */,
 				738F9D562037604000058972 /* Products */,
 				73C838D4203766CB00DAFEE1 /* Frameworks */,
+				B0CA35CE1DFB0D234CFF272B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +101,19 @@
 			isa = PBXGroup;
 			children = (
 				73AC89C920377EA700038475 /* TwilioVideo.framework */,
+				DA9BA8D7CB30906A7FBDC3FF /* Pods_RNTwilioVideoWebRTC.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0CA35CE1DFB0D234CFF272B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8522988AF7DF170CDE73366 /* Pods-RNTwilioVideoWebRTC.debug.xcconfig */,
+				1EF9B4F7C64144A5F4EF45A6 /* Pods-RNTwilioVideoWebRTC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 738F9D5E2037604000058972 /* Build configuration list for PBXNativeTarget "RNTwilioVideoWebRTC" */;
 			buildPhases = (
+				FA318D5B7F299407DA14DFA1 /* [CP] Check Pods Manifest.lock */,
 				738F9D512037604000058972 /* Sources */,
 				738F9D522037604000058972 /* Frameworks */,
 				738F9D532037604000058972 /* CopyFiles */,
@@ -150,6 +168,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA318D5B7F299407DA14DFA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNTwilioVideoWebRTC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		738F9D512037604000058972 /* Sources */ = {
@@ -272,6 +315,7 @@
 		};
 		738F9D5F2037604000058972 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8522988AF7DF170CDE73366 /* Pods-RNTwilioVideoWebRTC.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -296,6 +340,7 @@
 		};
 		738F9D602037604000058972 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EF9B4F7C64144A5F4EF45A6 /* Pods-RNTwilioVideoWebRTC.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
