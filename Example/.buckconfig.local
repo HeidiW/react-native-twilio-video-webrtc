@@ -1,0 +1,44 @@
+
+# This configuration file was updated by buckit. Manual changes
+# should be made in the root project's .buckconfig /.buckconfig.local
+# file. All package's .buckconfig.local files can then be updated by
+# running `yarn run buckit buckconfig`
+
+[cxx]
+cflags = -std=gnu11 -pthread -g
+cxxflags = -std=gnu++14 -pthread -g
+ldflags = -pthread
+cxx = /usr/bin/clang++
+cc = /usr/bin/clang
+default_platform = macos
+
+[cxx#macos]
+cflags = -std=gnu11 -pthread -g
+cxxflags = -std=gnu++14 -pthread -g
+ldflags = -pthread
+cxx = /usr/bin/clang++
+cc = /usr/bin/clang
+
+[python#py2]
+interpreter = /usr/bin/python2
+includes = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
+libs = /Library/Python
+
+[python#py2-macos]
+interpreter = /usr/bin/python2
+includes = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
+libs = /Library/Python
+
+[python#py3]
+interpreter = /usr/bin/python3
+includes = /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.7/include/python3.7m
+libs = /Library/Python
+
+[python#py3-macos]
+interpreter = /usr/bin/python3
+includes = /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.7/include/python3.7m
+libs = /Library/Python
+
+[buckit]
+system_lib_paths = /usr/local/lib,/usr/local/opt/{name}/lib,/usr/lib
+

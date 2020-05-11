@@ -7,4 +7,16 @@ target 'Example' do
   pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
   pod 'React', path: '../node_modules/react-native'
   pod 'react-native-twilio-video-webrtc', path: '../../'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 end
+
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      if target.name == "React"
+        target.remove_from_project
+      end
+    end
+  end
+
+
+
